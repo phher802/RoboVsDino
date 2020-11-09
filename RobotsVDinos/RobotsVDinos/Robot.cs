@@ -9,11 +9,11 @@ namespace RobotsVDinos
     class Robot
     {
         // member variables (HAS A)
-        string robotName;
-        int robotHealth;
-        int robotPowerLevel;
-        string robotWeaponType;  //make into list?
-        int robotAttackPower;
+        public string robotName;
+        public int robotHealth;
+        public int robotPowerLevel;
+        public string robotWeaponType;  //make into list?
+        public int robotAttackPower;
 
 
         // constructor (SPAWNER)
