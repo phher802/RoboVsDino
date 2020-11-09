@@ -15,6 +15,13 @@ namespace RobotsVDinos
         int dinoAttackPower;
 
         // constructor (SPAWNER)
+        public Dinosaur(string dinoType)
+        {
+            this.dinoType = dinoType;
+            dinoHealth = 10;
+            dinoEnergy = 10;
+            dinoAttackPower = 10;
+        }
 
         // methods (can do)
     }
