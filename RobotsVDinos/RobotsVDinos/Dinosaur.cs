@@ -13,7 +13,6 @@ namespace RobotsVDinos
         int dinoHealth;
         int dinoEnergy;
         int dinoAttackPower;
-        
 
         // constructor (SPAWNER)
 
