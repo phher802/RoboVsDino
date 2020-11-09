@@ -8,5 +8,15 @@ namespace RobotsVDinos
 {
     class Dinosaur
     {
+        // member variables (HAS A)
+        string dinoType;
+        int dinoHealth;
+        int dinoEnergy;
+        int dinoAttackPower;
+        
+
+        // constructor (SPAWNER)
+
+        // methods (can do)
     }
 }

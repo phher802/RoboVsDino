@@ -8,5 +8,14 @@ namespace RobotsVDinos
 {
     class Robot
     {
+        // member variables (HAS A)
+
+        // constructor (SPAWNER)
+        public Robot()
+        {
+
+        }
+
+        // methods (can do)
     }
 }
