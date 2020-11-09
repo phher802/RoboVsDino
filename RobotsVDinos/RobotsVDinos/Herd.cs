@@ -8,5 +8,14 @@ namespace RobotsVDinos
 {
     class Herd
     {
+        // member variables (HAS A)
+        public List<Dinosaur> dinosaurs;
+        // constructor (SPAWNER)
+        public Herd()
+        {
+            dinosaurs = new List<Dinosaur>();
+            
+        }
+        // methods (can do)
     }
 }

@@ -8,5 +8,10 @@ namespace RobotsVDinos
 {
     class Battelfield
     {
+        // member variables (HAS A)
+
+        // constructor (SPAWNER)
+
+        // methods (can do)
     }
 }

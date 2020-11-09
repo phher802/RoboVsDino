@@ -20,10 +20,10 @@ namespace RobotsVDinos
         public Robot(string name, string robotWeaponType)
         {
            this.robotName = name;
-            robotHealth = 10;
-            robotPowerLevel = 10;
+           robotHealth = 10;
+           robotPowerLevel = 10;
            this.robotWeaponType = robotWeaponType;
-            robotAttackPower = 10;
+           robotAttackPower = 10;
         }
 
         // methods (can do)

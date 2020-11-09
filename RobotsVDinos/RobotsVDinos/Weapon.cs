@@ -8,5 +8,10 @@ namespace RobotsVDinos
 {
     class Weapon
     {
+        // member variables (HAS A)
+
+        // constructor (SPAWNER)
+
+        // methods (can do)
     }
 }

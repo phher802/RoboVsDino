@@ -8,5 +8,12 @@ namespace RobotsVDinos
 {
     class Fleet
     {
+        // member variables (HAS A)
+        public List<Robot> robots;
+
+        // constructor (SPAWNER)
+
+
+        // methods (can do)
     }
 }

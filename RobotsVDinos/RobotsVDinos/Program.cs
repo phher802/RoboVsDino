@@ -17,6 +17,12 @@ namespace RobotsVDinos
             Dinosaur dinoOne = new Dinosaur("tRex");
             Dinosaur dinoTwo = new Dinosaur("Spinosaurus");
             Dinosaur dinoThree = new Dinosaur("Velociraptor");
+
+           
+            Console.ReadLine();
         }
+        
     }
+
+
 }
