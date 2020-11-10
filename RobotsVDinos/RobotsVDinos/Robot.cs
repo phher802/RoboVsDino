@@ -31,13 +31,21 @@ namespace RobotsVDinos
         //1. have an ability to attack a dino
         //2. have ability to block an attack
 
+
         public void RobotAttack(Dinosaur dino)
         {
-            dino.dinoHealth -= 1;
-            //dino.dinoEnergy -= 2;
             
-   
-            // random attack power later
+            robotAttackPower -= 1;
+            //dino.dinoHealth -= 1;
+            //dino.dinoEnergy -= 2;
+            //bool attack = Convert.ToBoolean(dino.dinoHealth -= 1);
+
+            if (robotAttackPower == -1)
+            {
+                dino.dinoHealth -= 1;
+                dino.dinoEnergy -= 2;
+
+            }
         }
 
         public void RoboBlock()
