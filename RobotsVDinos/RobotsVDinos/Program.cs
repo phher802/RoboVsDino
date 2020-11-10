@@ -10,15 +10,16 @@ namespace RobotsVDinos
     {
         static void Main(string[] args)
         {
-            Robot robotOne = new Robot("Mecha", "LaserBeam");
-            Robot robotTwo = new Robot("Franky", "AirPistol");
-            Robot robotThree = new Robot("Carmen", "HandGun");
+            //Robot robotOne = new Robot("Mecha", "LaserBeam");
+            //Robot robotTwo = new Robot("Franky", "AirPistol");
+            //Robot robotThree = new Robot("Carmen", "HandGun");
 
-            Dinosaur dinoOne = new Dinosaur("tRex");
-            Dinosaur dinoTwo = new Dinosaur("Spinosaurus");
-            Dinosaur dinoThree = new Dinosaur("Velociraptor");
+            
 
-           
+            Herd herd = new Herd();
+
+
+            Console.WriteLine();
             Console.ReadLine();
         }
         

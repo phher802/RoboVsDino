@@ -9,13 +9,36 @@ namespace RobotsVDinos
     class Herd
     {
         // member variables (HAS A)
-        public List<Dinosaur> dinosaurs;
+        public List<Dinosaur> dinoType;
+        
+
         // constructor (SPAWNER)
         public Herd()
         {
-            dinosaurs = new List<Dinosaur>();
             
+            dinoType = new List<Dinosaur>();
+
+            for (int i = 0; i < 3; i++)
+            {
+                Dinosaur dino = new Dinosaur(typeOfDino());
+                
+                dinoType.Add(dino);
+
+                //how to add a dino to the list and pass in name at the same time
+
+
+            }
         }
         // methods (can do)
+        public string typeOfDino()
+        {
+            //name the dino
+            Console.WriteLine("Enter a type of dinosaur");
+            string typeName = Console.ReadLine();
+
+            return typeName;
+
+            
+        }
     }
 }

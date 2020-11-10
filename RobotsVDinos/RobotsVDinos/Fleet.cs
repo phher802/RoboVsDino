@@ -12,7 +12,10 @@ namespace RobotsVDinos
         public List<Robot> robots;
 
         // constructor (SPAWNER)
-
+        public Fleet()
+        {
+            robots = new List<Robot>();
+        }
 
         // methods (can do)
     }

@@ -9,10 +9,10 @@ namespace RobotsVDinos
     class Dinosaur
     {
         // member variables (HAS A)
-        string dinoType;
-        int dinoHealth;
-        int dinoEnergy;
-        int dinoAttackPower;
+        public string dinoType;
+        public int dinoHealth;
+        public int dinoEnergy;
+        public int dinoAttackPower;
 
         // constructor (SPAWNER)
         public Dinosaur(string dinoType)
@@ -24,5 +24,7 @@ namespace RobotsVDinos
         }
 
         // methods (can do)
+        
+
     }
 }
