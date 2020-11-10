@@ -12,7 +12,7 @@ namespace RobotsVDinos
         public string robotName;
         public int robotHealth;
         public int robotPowerLevel;
-        public string robotWeaponType;  //choose from a list? pre- determined or user input?
+        public Weapon robotWeaponType;  //choose from a list? pre- determined or user input?
         public int robotAttackPower;
 
 
@@ -21,8 +21,8 @@ namespace RobotsVDinos
         {
            this.robotName = name;
            robotHealth = 10;
-           robotPowerLevel = 10;
-           robotWeaponType = robotWeaponType;
+           robotPowerLevel = 20;
+           //robotWeaponType = robotWeaponType;
            robotAttackPower = 10;
         }
 
@@ -31,10 +31,13 @@ namespace RobotsVDinos
         //1. have an ability to attack a dino
         //2. have ability to block an attack
 
-        public void RobotAttack()
+        public void RobotAttack(Dinosaur dino)
         {
-            // one attack
-            // random attack power?
+            dino.dinoHealth -= 1;
+            dino.dinoEnergy -= 2;
+            
+                
+            // random attack power later
         }
 
         public void RoboBlock()

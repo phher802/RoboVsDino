@@ -19,12 +19,16 @@ namespace RobotsVDinos
         {
             this.dinoType = dinoType;
             dinoHealth = 10;
-            dinoEnergy = 10;
+            dinoEnergy = 20;
             dinoAttackPower = 10;
         }
 
         // methods (can do)
         
-
+        public void DinoAttack(Robot robot)
+        {
+            robot.robotHealth -= 1;
+           
+        }
     }
 }
