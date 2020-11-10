@@ -12,7 +12,7 @@ namespace RobotsVDinos
         public string robotName;
         public int robotHealth;
         public int robotPowerLevel;
-        public string robotWeaponType;  //make into list?
+        public string robotWeaponType;  //choose from a list? pre- determined or user input?
         public int robotAttackPower;
 
 
@@ -27,5 +27,21 @@ namespace RobotsVDinos
         }
 
         // methods (can do)
+
+        //1. have an ability to attack a dino
+        //2. have ability to block an attack
+
+        public void RobotAttack()
+        {
+            // one attack
+            // random attack power?
+        }
+
+        public void RoboBlock()
+        {
+            //one block
+        }
     }
+
+
 }

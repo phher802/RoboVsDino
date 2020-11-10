@@ -11,7 +11,10 @@ namespace RobotsVDinos
         // member variables (HAS A)
 
         // constructor (SPAWNER)
-
+        public Weapon()
+        {
+            //
+        }
         // methods (can do)
     }
 }
