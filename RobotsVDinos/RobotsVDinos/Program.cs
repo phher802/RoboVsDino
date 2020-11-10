@@ -10,14 +10,8 @@ namespace RobotsVDinos
     {
         static void Main(string[] args)
         {
-            //Robot robotOne = new Robot("Mecha", "LaserBeam");
-            //Robot robotTwo = new Robot("Franky", "AirPistol");
-            //Robot robotThree = new Robot("Carmen", "HandGun");
-
-            
-
-            Herd herd = new Herd();
-
+            //Herd herd = new Herd();
+            Battelfield battle = new Battelfield();
 
             Console.WriteLine();
             Console.ReadLine();

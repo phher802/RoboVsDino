@@ -16,12 +16,16 @@ namespace RobotsVDinos
         {
             robots = new List<Robot>();
 
-            for (int i = 0; i < 3; i++)
+            if(robots == null)
             {
-                Robot robot = new Robot(RobotName());
+                for (int i = 0; i < 3; i++)
+                {
+                    Robot robot = new Robot(RobotName());
 
-                robots.Add(robot);
+                    robots.Add(robot);
+                }
             }
+         
         }
 
         // methods (can do)
