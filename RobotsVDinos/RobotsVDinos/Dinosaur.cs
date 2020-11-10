@@ -28,6 +28,7 @@ namespace RobotsVDinos
         public void DinoAttack(Robot robot)
         {
             robot.robotHealth -= 1;
+            robot.robotPowerLevel -= 2;
            
         }
     }
