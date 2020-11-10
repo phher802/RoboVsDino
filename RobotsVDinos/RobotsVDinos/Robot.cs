@@ -17,12 +17,12 @@ namespace RobotsVDinos
 
 
         // constructor (SPAWNER)
-        public Robot(string name, string robotWeaponType)
+        public Robot(string name)
         {
            this.robotName = name;
            robotHealth = 10;
            robotPowerLevel = 10;
-           this.robotWeaponType = robotWeaponType;
+           robotWeaponType = robotWeaponType;
            robotAttackPower = 10;
         }
 
