@@ -20,10 +20,10 @@ namespace RobotsVDinos
         public Robot(string name)
         {
            this.robotName = name;
-           robotHealth = 10;
-           robotPowerLevel = 20;
+           robotHealth = 5;
+           robotPowerLevel = 10;
            //robotWeaponType = robotWeaponType;
-           robotAttackPower = 10;
+           robotAttackPower = 5;
         }
 
         // methods (can do)
@@ -34,9 +34,9 @@ namespace RobotsVDinos
         public void RobotAttack(Dinosaur dino)
         {
             dino.dinoHealth -= 1;
-            dino.dinoEnergy -= 2;
+            //dino.dinoEnergy -= 2;
             
-                
+   
             // random attack power later
         }
 

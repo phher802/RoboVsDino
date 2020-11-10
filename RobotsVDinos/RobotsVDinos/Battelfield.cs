@@ -9,6 +9,8 @@ namespace RobotsVDinos
     class Battelfield
     {
         // member variables (HAS A)
+        Herd herd;
+        Fleet fleet; 
 
         // constructor (SPAWNER)
 
