@@ -31,7 +31,7 @@ namespace RobotsVDinos
 
         // methods
   
-        public void RoundOne()
+        public void Battle()
         {
 
             //int dinoHealth = herd.dinoType[0].dinoHealth;
@@ -44,38 +44,39 @@ namespace RobotsVDinos
 
             for (int i = 0; i < 3; i++)
             {
-                if (herd.dinoType[i].dinoHealth <= 0 || fleet.robots[i].robotHealth <= 0)
+
+                while (herd.dinoType[i].dinoHealth == fleet.robots[i].robotHealth && herd.dinoType[i].dinoAttackPower == fleet.robots[i].robotAttackPower)
                 {
-                    if (herd.dinoType[i].dinoHealth <= i)
+                    for (int x = 0; x < 10; x++)
                     {
-                        Console.WriteLine(fleet.robots[i].robotName + " Wins!");
-                        robotScore++;
-                        break;
+                        herd.dinoType[i].DinoAttack(fleet.robots[i]);
+                        fleet.robots[i].RobotAttack(herd.dinoType[i]);
+
+                        if (herd.dinoType[i].dinoHealth <= 0)
+                        {
+                            Console.WriteLine(fleet.robots[i].robotName + " Wins!");
+                            robotScore++;
+                            break;
+                        }
+                        else if (fleet.robots[i].robotHealth <= 0)
+                        {
+                            Console.WriteLine(herd.dinoType[i].dinoType + " Wins!");
+                            dinoScore++;
+                            break;
+                        }
+                        else if (herd.dinoType[i].dinoAttackPower <= fleet.robots[i].robotAttackPower)
+                        {
+                            fleet.robots[i].RobotAttack(herd.dinoType[i]);
+
+                        }
+                        else
+                        {
+                            herd.dinoType[i].DinoAttack(fleet.robots[i]);
+                        }
                     }
-                    else if (fleet.robots[i].robotHealth <= 0)
-                    {
-                        Console.WriteLine(herd.dinoType[i].dinoType + " Wins!");
-                        dinoScore++;
-                        break;
-                    }
+                   
 
                 }
-                else if (herd.dinoType[i].dinoHealth == fleet.robots[i].robotHealth && herd.dinoType[i].dinoAttackPower == fleet.robots[i].robotAttackPower)
-                {
-                    herd.dinoType[i].DinoAttack(fleet.robots[i]);
-                
-                }
-                else if (herd.dinoType[i].dinoHealth < fleet.robots[i].robotHealth || herd.dinoType[i].dinoAttackPower < fleet.robots[i].robotAttackPower)
-                {
-                    fleet.robots[i].RobotAttack(herd.dinoType[i]);
-                
-                }
-                else if (herd.dinoType[i].dinoHealth > fleet.robots[i].robotHealth || herd.dinoType[i].dinoAttackPower > fleet.robots[i].robotAttackPower)
-                {
-                    herd.dinoType[i].DinoAttack(fleet.robots[i]);
-             
-                }
-            
 
             }            
 
@@ -97,10 +98,8 @@ namespace RobotsVDinos
 
         public void RunBattle()
         {
-            RoundOne();
-            RoundOne();
-            RoundOne();
-
+            Battle();
+      
             DisplayWinner();
 
             Console.ReadLine();

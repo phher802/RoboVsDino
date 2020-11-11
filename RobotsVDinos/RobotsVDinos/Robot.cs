@@ -35,8 +35,8 @@ namespace RobotsVDinos
         public void RobotAttack(Dinosaur dino)
         {
 
-            dino.dinoHealth -= 2;
-            robotAttackPower -= 1;
+            dino.dinoHealth *= 3;
+            robotAttackPower -= 2;
             //dino.dinoEnergy -= 2;
 
         }

@@ -17,9 +17,9 @@ namespace RobotsVDinos
             robots = new List<Robot>();
           
          
-            Robot franky = new Robot("Franky", 5, 5);
-            Robot nano = new Robot("Nano", 5, 5);
-            Robot doraemon = new Robot("Doraemon", 5, 5);
+            Robot franky = new Robot("Franky", 10, 5);
+            Robot nano = new Robot("Nano", 10, 5);
+            Robot doraemon = new Robot("Doraemon", 10, 5);
 
             robots.Add(franky);
             robots.Add(nano);

@@ -29,7 +29,7 @@ namespace RobotsVDinos
         public void DinoAttack(Robot robot)
         {
 
-            robot.robotHealth -= 2;
+            robot.robotHealth *= 2;
             dinoAttackPower -= 1;
        
 
