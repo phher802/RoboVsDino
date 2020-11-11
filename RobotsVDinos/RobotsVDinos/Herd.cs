@@ -15,30 +15,36 @@ namespace RobotsVDinos
         // constructor (SPAWNER)
         public Herd()
         {
-            
-            dinoType = new List<Dinosaur>();
+            Dinosaur tRex = new Dinosaur("tRex", 5, 5);
+            Dinosaur spinosaurus = new Dinosaur("Spinosaurus", 5, 5);
+            Dinosaur allosaurus = new Dinosaur("Allosaurus", 5, 5);
 
-            for (int i = 0; i < 3; i++)
-            {
-                Dinosaur dino = new Dinosaur(typeOfDino());
-                
-                dinoType.Add(dino);
-
-                //how to add a dino to the list and pass in name at the same time
-
-
-            }
         }
         // methods (can do)
-        public string typeOfDino()
-        {
-            //name the dino
-            Console.WriteLine("Enter a type of dinosaur");
-            string typeName = Console.ReadLine();
+        //public string TypeOfDino()
+        //{
+        //    //name the dino
+        //    Console.WriteLine("Enter a type of dinosaur");
+        //    string typeName = Console.ReadLine();
 
-            return typeName;
+        //    return typeName;
 
             
-        }
+        //}
+
+        //public void DinoList()
+        //{
+        //    dinoType = new List<Dinosaur>();
+
+        //    for (int i = 0; i < 3; i++)
+        //    {
+        //        Dinosaur dino = new Dinosaur(TypeOfDino(), 5, 5);
+
+        //        dinoType.Add(dino);
+
+        //        //how to add a dino to the list and pass in name at the same time
+        //    }
+
+        //}
     }
 }

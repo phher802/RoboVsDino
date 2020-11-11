@@ -17,13 +17,13 @@ namespace RobotsVDinos
 
 
         // constructor (SPAWNER)
-        public Robot(string name)
+        public Robot(string name, int robotHealth, int robotAttackPower)
         {
            this.robotName = name;
-           robotHealth = 5;
-           robotPowerLevel = 10;
-           //robotWeaponType = robotWeaponType;
-           robotAttackPower = 5;
+           this.robotHealth = robotHealth;
+            robotPowerLevel = 10;
+            //robotWeaponType = robotWeaponType;
+            this.robotAttackPower = robotAttackPower;
         }
 
         // methods (can do)
@@ -37,21 +37,21 @@ namespace RobotsVDinos
         // if robot attacks dino, it will lose one attack point point
         // and dino will lose one health point
 
-        //public void RobotAttack(Dinosaur dino)
-        //{
-            
-        //    robotAttackPower -= 1;
-        //    //dino.dinoHealth -= 1;
-        //    //dino.dinoEnergy -= 2;
-        //    //bool attack = Convert.ToBoolean(dino.dinoHealth -= 1);
+        public void RobotAttack(Dinosaur dino)
+        {
 
-        //    if (robotAttackPower == -1)
-        //    {
-        //        dino.dinoHealth -= 1;
-        //        //dino.dinoEnergy -= 2;
+            dino.dinoHealth -= 1;
+            robotAttackPower -= 1;          
+            //dino.dinoEnergy -= 2;
+            //bool attack = Convert.ToBoolean(dino.dinoHealth -= 1);
 
-        //    }
-        //}
+            //if (dino.dinoHealth == -1)
+            //{
+            //    robotAttackPower -= 1;
+            //    //dino.dinoEnergy -= 2;
+
+            //}
+        }
 
         //public void RoboBlock()
         //{

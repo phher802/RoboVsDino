@@ -15,31 +15,32 @@ namespace RobotsVDinos
         public int dinoAttackPower;
 
         // constructor (SPAWNER)
-        public Dinosaur(string dinoType)
+        public Dinosaur(string dinoType, int dinoHealth, int dinoAttackPower)
         {
             this.dinoType = dinoType;
-            dinoHealth = 5;
+            this.dinoHealth = dinoHealth;
             dinoEnergy = 10;
-            dinoAttackPower = 5;
+            this.dinoAttackPower = dinoAttackPower;
         }
 
         // methods (can do)
 
 
-        //public void DinoAttack(Robot robot)
-        //{
-        //    dinoAttackPower -= 1;
-        //    //robot.robotHealth -= 1;
-        //    //robot.robotPowerLevel -= 2;
-        //    //bool attack = Convert.ToBoolean(robot.robotHealth -= 1);
+        public void DinoAttack(Robot robot)
+        {
+            
+            robot.robotHealth -= 1;
+            dinoAttackPower -= 1;
+            //robot.robotPowerLevel -= 2;
+            //bool attack = Convert.ToBoolean(robot.robotHealth -= 1);
 
-        //    if (dinoAttackPower == -1)
-        //    {
-        //        robot.robotHealth -= 1;
-        //        //robot.robotPowerLevel -= 2;
+            //if (dinoAttackPower == -1)
+            //{
+            //    robot.robotHealth -= 1;
+            //    //robot.robotPowerLevel -= 2;
 
-        //    }
+            //}
 
-        //}
+        }
     }
 }

@@ -14,29 +14,32 @@ namespace RobotsVDinos
         // constructor (SPAWNER)
         public Fleet()
         {
-            robots = new List<Robot>();
-
-            if(robots == null)
-            {
-                for (int i = 0; i < 3; i++)
-                {
-                    Robot robot = new Robot(RobotName());
-
-                    robots.Add(robot);
-                }
-            }
-         
+            Robot franky = new Robot("Franky", 5, 5);
+            Robot nano = new Robot("Nano", 5, 5);
+            Robot doraemon = new Robot("Doraemon", 5, 5);
         }
 
         // methods (can do)
-        public string RobotName()
-        {
-            Console.WriteLine("Name your Robot");
-            string newRobot = Console.ReadLine();
+        //public string RobotName()
+        //{
+        //    Console.WriteLine("Name your Robot");
+        //    string newRobot = Console.ReadLine();
 
-            return newRobot;
-        }
+        //    return newRobot;
+        //}
 
-        
+        //public void RobotList()
+        //{
+          
+
+        //    for (int i = 0; i < 3; i++)
+        //    {
+        //        Robot robot = new Robot(RobotName());
+
+        //        robots.Add(robot);
+        //    }
+
+
+        //}
     }
 }
