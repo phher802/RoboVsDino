@@ -28,8 +28,8 @@ namespace RobotsVDinos
 
         public void DinoAttack(Robot robot)
         {
-            
-            robot.robotHealth -= 1;
+
+            robot.robotHealth -= 2;
             dinoAttackPower -= 1;
             //robot.robotPowerLevel -= 2;
             //bool attack = Convert.ToBoolean(robot.robotHealth -= 1);

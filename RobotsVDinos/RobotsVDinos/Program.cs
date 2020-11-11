@@ -11,13 +11,10 @@ namespace RobotsVDinos
         static void Main(string[] args)
         {
             //Herd herd = new Herd();
-            //Battelfield battle = new Battelfield();
+            Battelfield battle = new Battelfield();
             ////battle.BattleRun();
 
-            //battle.RoundOne();
-
-            Herd herd = new Herd();
-            herd.DinoList();
+            battle.RoundOne();
 
 
             //Console.WriteLine();

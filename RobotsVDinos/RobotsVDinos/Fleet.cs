@@ -16,8 +16,7 @@ namespace RobotsVDinos
         {
             robots = new List<Robot>();
           
-            for (int i = 0; i < 3; i++)
-            {
+         
                 Robot franky = new Robot("Franky", 5, 5);
                 Robot nano = new Robot("Nano", 5, 5);
                 Robot doraemon = new Robot("Doraemon", 5, 5);
@@ -26,7 +25,7 @@ namespace RobotsVDinos
                 robots.Add(nano);
                 robots.Add(doraemon);
 
-            }
+           
 
         }
 
