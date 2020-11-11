@@ -10,16 +10,34 @@ namespace RobotsVDinos
     {
         // member variables (HAS A)
         public List<Dinosaur> dinoType;
-        
+
 
         // constructor (SPAWNER)
         public Herd()
         {
-            Dinosaur tRex = new Dinosaur("tRex", 5, 5);
-            Dinosaur spinosaurus = new Dinosaur("Spinosaurus", 5, 5);
-            Dinosaur allosaurus = new Dinosaur("Allosaurus", 5, 5);
+      
+            dinoType = new List<Dinosaur>();
 
+            for (int i = 0; i < 3; i++)
+            {
+                Dinosaur tRex = new Dinosaur("tRex", 5, 5);
+                Dinosaur spino = new Dinosaur("Spinosaurus", 5, 5);
+                Dinosaur allo = new Dinosaur("Allosaurus", 5, 5);
+                dinoType.Add(tRex);
+                dinoType.Add(spino);
+                dinoType.Add(allo);
+            }
         }
+
+
+        //methods
+    }
+ }
+
+
+
+    
+        
         // methods (can do)
         //public string TypeOfDino()
         //{
@@ -46,5 +64,5 @@ namespace RobotsVDinos
         //    }
 
         //}
-    }
-}
+    
+
