@@ -14,7 +14,7 @@ namespace RobotsVDinos
             Battelfield battle = new Battelfield();
             ////battle.BattleRun();
 
-            battle.RoundOne();
+            battle.RunBattle();
 
 
             //Console.WriteLine();

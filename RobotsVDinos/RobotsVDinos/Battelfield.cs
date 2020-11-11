@@ -30,6 +30,7 @@ namespace RobotsVDinos
         }
 
         // methods
+  
         public void RoundOne()
         {
 
@@ -81,23 +82,13 @@ namespace RobotsVDinos
                     dinoAttackPower -= 1;
 
                 }
-                else if (dinoHealth < roboHealth || dinoAttackPower > roboAttackPower)
-                {
-                    fleet.robots[0].RobotAttack(herd.dinoType[0]);
-                    dinoHealth -= 2;
-                    roboAttackPower -= 1;
-                    herd.dinoType[0].DinoAttack(fleet.robots[0]);
-                    roboHealth -= 2;
-                    dinoAttackPower -= 1;
-                }
-
-
-            }
-
             
+
+            }            
 
         }
 
+        
         public void DisplayWinner()
         {
             if (dinoScore == 3)
@@ -111,19 +102,19 @@ namespace RobotsVDinos
 
         }
 
+        public void RunBattle()
+        {
+            RoundOne();
 
+            DisplayWinner();
+
+            Console.ReadLine();
+        }
     }
 
 
 }   
-           //herd.dinoType[0].DinoAttack(fleet.robots[0]);
-
-
-        
-        //public void BattleRun()
-        //{
-
-        //}
+           /
 
 
 
@@ -132,7 +123,7 @@ namespace RobotsVDinos
 
 
 
-}   
+
 
 
 
