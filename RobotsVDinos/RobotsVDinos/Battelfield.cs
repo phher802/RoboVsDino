@@ -34,53 +34,46 @@ namespace RobotsVDinos
         public void RoundOne()
         {
 
-            int dinoHealth = herd.dinoType[0].dinoHealth;
-            int dinoAttackPower = herd.dinoType[0].dinoAttackPower;
+            //int dinoHealth = herd.dinoType[0].dinoHealth;
+            //int dinoAttackPower = herd.dinoType[0].dinoAttackPower;
 
-            int roboHealth = fleet.robots[0].robotHealth;
-            int roboAttackPower = fleet.robots[0].robotAttackPower;
+            //int roboHealth = fleet.robots[0].robotHealth;
+            //int roboAttackPower = fleet.robots[0].robotAttackPower;
 
             //for loop to loop through each group's health points to reach zero
 
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 3; i++)
             {
-                if (dinoHealth <= 0 || roboHealth <= 0)
+                if (herd.dinoType[i].dinoHealth <= 0 || fleet.robots[i].robotHealth <= 0)
                 {
-                    if (dinoHealth <= 0)
+                    if (herd.dinoType[i].dinoHealth <= i)
                     {
-                        Console.WriteLine("Franky Wins!");
+                        Console.WriteLine(fleet.robots[i].robotName + " Wins!");
                         robotScore++;
                         break;
                     }
-                    else if (roboHealth <= 0)
+                    else if (fleet.robots[i].robotHealth <= 0)
                     {
-                        Console.WriteLine("T-Rex Wins!");
+                        Console.WriteLine(herd.dinoType[i].dinoType + " Wins!");
                         dinoScore++;
                         break;
                     }
 
                 }
-                else if (dinoHealth == roboHealth && dinoAttackPower == roboAttackPower)
+                else if (herd.dinoType[i].dinoHealth == fleet.robots[i].robotHealth && herd.dinoType[i].dinoAttackPower == fleet.robots[i].robotAttackPower)
                 {
-                    herd.dinoType[0].DinoAttack(fleet.robots[0]);
-                    roboHealth -= 2;
-                    dinoAttackPower -= 1;
-
+                    herd.dinoType[i].DinoAttack(fleet.robots[i]);
+                
                 }
-                else if (dinoHealth < roboHealth || dinoAttackPower < roboAttackPower)
+                else if (herd.dinoType[i].dinoHealth < fleet.robots[i].robotHealth || herd.dinoType[i].dinoAttackPower < fleet.robots[i].robotAttackPower)
                 {
-                    fleet.robots[0].RobotAttack(herd.dinoType[0]);
-                    dinoHealth -= 2;
-                    roboAttackPower -= 1;
-
+                    fleet.robots[i].RobotAttack(herd.dinoType[i]);
+                
                 }
-                else if (dinoHealth > roboHealth || dinoAttackPower > roboAttackPower)
+                else if (herd.dinoType[i].dinoHealth > fleet.robots[i].robotHealth || herd.dinoType[i].dinoAttackPower > fleet.robots[i].robotAttackPower)
                 {
-
-                    herd.dinoType[0].DinoAttack(fleet.robots[0]);
-                    roboHealth -= 2;
-                    dinoAttackPower -= 1;
-
+                    herd.dinoType[i].DinoAttack(fleet.robots[i]);
+             
                 }
             
 
@@ -95,7 +88,7 @@ namespace RobotsVDinos
             {
                 Console.WriteLine("The Dinosaurs Wins!");
             }
-            else
+            else if(robotScore == 3)
             {
                 Console.WriteLine("The Robots Wins!");
             }
@@ -104,6 +97,8 @@ namespace RobotsVDinos
 
         public void RunBattle()
         {
+            RoundOne();
+            RoundOne();
             RoundOne();
 
             DisplayWinner();

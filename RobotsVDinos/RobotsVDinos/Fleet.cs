@@ -17,39 +17,17 @@ namespace RobotsVDinos
             robots = new List<Robot>();
           
          
-                Robot franky = new Robot("Franky", 5, 5);
-                Robot nano = new Robot("Nano", 5, 5);
-                Robot doraemon = new Robot("Doraemon", 5, 5);
+            Robot franky = new Robot("Franky", 5, 5);
+            Robot nano = new Robot("Nano", 5, 5);
+            Robot doraemon = new Robot("Doraemon", 5, 5);
 
-                robots.Add(franky);
-                robots.Add(nano);
-                robots.Add(doraemon);
-
-           
+            robots.Add(franky);
+            robots.Add(nano);
+            robots.Add(doraemon);         
 
         }
 
-        // methods (can do)
-        //public string RobotName()
-        //{
-        //    Console.WriteLine("Name your Robot");
-        //    string newRobot = Console.ReadLine();
-
-        //    return newRobot;
-        //}
-
-        //public void RobotList()
-        //{
-          
-
-        //    for (int i = 0; i < 3; i++)
-        //    {
-        //        Robot robot = new Robot(RobotName());
-
-        //        robots.Add(robot);
-        //    }
-
-
-        //}
+       
+        
     }
 }
